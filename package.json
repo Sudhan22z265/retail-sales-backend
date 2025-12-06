@@ -1,0 +1,33 @@
+{
+    "name": "retail-sales-backend",
+    "version": "1.0.0",
+    "description": "Backend API for Retail Sales Management System",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js",
+        "download-dataset": "node scripts/download-dataset.js",
+        "build": "echo \"Backend does not require build step\"",
+        "prod": "NODE_ENV=production node src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "retail",
+        "sales",
+        "api",
+        "express"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2",
+        "cors": "^2.8.5",
+        "csv-parser": "^3.0.0",
+        "dotenv": "^16.3.1",
+        "axios": "^1.6.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.2"
+    }
+}
