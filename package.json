@@ -5,11 +5,11 @@
     "main": "src/index.js",
     "type": "module",
     "scripts": {
-        "start": "node src/index.js",
+        "start": "node --max-old-space-size=1024 src/index.js",
         "dev": "nodemon src/index.js",
-        "download-dataset": "node scripts/download-dataset.js",
+        "download-dataset": "node --max-old-space-size=1024 scripts/download-dataset.js",
         "build": "echo \"Backend does not require build step\"",
-        "prod": "NODE_ENV=production node src/index.js",
+        "prod": "NODE_ENV=production node --max-old-space-size=1024 src/index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
